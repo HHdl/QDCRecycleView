@@ -18,6 +18,7 @@ import android.widget.FrameLayout;
 import com.qdcares.qdcaresrecyclerview.footview.BaseFooterView;
 import com.qdcares.qdcaresrecyclerview.footview.FooterView;
 import com.qdcares.qdcaresrecyclerview.listener.LoadMoreListener;
+import com.qdcares.qdcaresrecyclerview.listener.TouchFromListener;
 import com.qdcares.qdcaresrecyclerview.swipemenu.SwipeMenuRecyclerView;
 
 /**
@@ -37,6 +38,8 @@ public class QdCaresRecyclerView extends FrameLayout implements SwipeRefreshLayo
 
     private RecyclerView.LayoutManager layoutManager;
     private LoadMoreListener loadMoreListener;
+    private TouchFromListener touchListener;
+
     private GridLayoutManager.SpanSizeLookup spanSizeLookup;
     private DataObserver dataObserver;
     private RecyclerViewAdapter adapter;
@@ -87,11 +90,22 @@ public class QdCaresRecyclerView extends FrameLayout implements SwipeRefreshLayo
                 super.onScrollStateChanged(recyclerView, newState);
             }
 
+            int distance = 0;
+
             @Override
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
                 if (!isLoadMoreEnable || isLoadingMore || isRefreshing()) {
                     return;
+                }
+
+                if (null != touchListener) {
+                    if (dy > 0 && distance <= 0) {
+                        touchListener.onTouchFrom(dy);
+                    } else if (dy < 0 && distance >= 0) {
+                        touchListener.onTouchFrom(dy);
+                    }
+                    distance = dy;
                 }
 
                 //找到最后一个可见position
@@ -150,6 +164,15 @@ public class QdCaresRecyclerView extends FrameLayout implements SwipeRefreshLayo
      */
     public void setOnLoadListener(LoadMoreListener listener) {
         loadMoreListener = listener;
+    }
+
+    /**
+     * 设置滑动接口监听
+     *
+     * @param touchListener
+     */
+    public void setTouchListener(TouchFromListener touchListener) {
+        this.touchListener = touchListener;
     }
 
     @Override
