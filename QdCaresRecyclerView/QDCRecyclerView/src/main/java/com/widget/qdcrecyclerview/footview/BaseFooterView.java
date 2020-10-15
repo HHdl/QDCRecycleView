@@ -1,4 +1,4 @@
-package com.qdcares.qdcrecyclerview.footview;
+package com.widget.qdcrecyclerview.footview;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -8,7 +8,7 @@ import android.widget.FrameLayout;
 
 
 
-import com.qdcares.qdcrecyclerview.listener.FooterViewListener;
+import com.widget.qdcrecyclerview.listener.FooterViewListener;
 
 
 /**

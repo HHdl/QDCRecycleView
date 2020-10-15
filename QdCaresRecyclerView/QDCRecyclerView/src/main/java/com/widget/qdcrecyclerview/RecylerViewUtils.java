@@ -1,4 +1,4 @@
-package com.qdcares.qdcrecyclerview;
+package com.widget.qdcrecyclerview;
 
 
 import android.support.v7.widget.LinearLayoutManager;

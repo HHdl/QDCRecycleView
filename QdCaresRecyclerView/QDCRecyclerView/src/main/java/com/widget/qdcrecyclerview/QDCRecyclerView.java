@@ -1,4 +1,4 @@
-package com.qdcares.qdcrecyclerview;
+package com.widget.qdcrecyclerview;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -18,14 +18,12 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
-
-import com.qdcares.qdcrecyclerview.footview.BaseFooterView;
-import com.qdcares.qdcrecyclerview.footview.FooterView;
-import com.qdcares.qdcrecyclerview.listener.OnErrorListener;
-import com.qdcares.qdcrecyclerview.listener.OnLoadMoreListener;
-import com.qdcares.qdcrecyclerview.listener.OnRefreshListener;
-
-import static com.qdcares.qdcrecyclerview.RecylerViewUtils.getLastPosition;
+import com.qdcares.qdcrecyclerview.R;
+import com.widget.qdcrecyclerview.footview.BaseFooterView;
+import com.widget.qdcrecyclerview.footview.FooterView;
+import com.widget.qdcrecyclerview.listener.OnErrorListener;
+import com.widget.qdcrecyclerview.listener.OnLoadMoreListener;
+import com.widget.qdcrecyclerview.listener.OnRefreshListener;
 
 
 /**
@@ -187,7 +185,7 @@ public class QDCRecyclerView extends FrameLayout {
 
     private void loadMore() {
         //找到最后一个可见position
-        lastVisiablePosition = getLastPosition(recyclerView.getLayoutManager());
+        lastVisiablePosition = RecylerViewUtils.getLastPosition(recyclerView.getLayoutManager());
 
         //判断到最后一个item执行加载更多
         int childCount = adapter == null ? 0 : adapter.getItemCount();

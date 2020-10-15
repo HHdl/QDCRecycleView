@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/QdCaresRecyclerView.iml" filepath="$PROJECT_DIR$/.idea/QdCaresRecyclerView.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/qdcaresrecyclerview/QdCaresRecyclerView.QDCRecyclerView.iml" filepath="$PROJECT_DIR$/.idea/modules/qdcaresrecyclerview/QdCaresRecyclerView.QDCRecyclerView.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/QdCaresRecyclerView.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/QdCaresRecyclerView.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/QDCRecycleView.QdCaresRecyclerView.iml" filepath="$PROJECT_DIR$/.idea/modules/QDCRecycleView.QdCaresRecyclerView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/QDCRecycleView.QdCaresRecyclerView.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/QDCRecycleView.QdCaresRecyclerView.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/QDCRecyclerView/com.github.HHdl.QdCaresRecyclerView.QDCRecyclerView.iml" filepath="$PROJECT_DIR$/.idea/modules/QDCRecyclerView/com.github.HHdl.QdCaresRecyclerView.QDCRecyclerView.iml" />
     </modules>
   </component>
 </project>

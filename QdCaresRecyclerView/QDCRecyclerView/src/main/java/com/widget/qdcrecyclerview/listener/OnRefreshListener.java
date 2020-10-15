@@ -1,4 +1,4 @@
-package com.qdcares.qdcrecyclerview.listener;
+package com.widget.qdcrecyclerview.listener;
 
 /**
  * Author:handa on 2019/7/16

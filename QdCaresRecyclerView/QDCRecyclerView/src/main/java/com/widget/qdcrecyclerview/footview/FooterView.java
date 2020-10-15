@@ -1,4 +1,4 @@
-package com.qdcares.qdcrecyclerview.footview;
+package com.widget.qdcrecyclerview.footview;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 
 import com.qdcares.qdcrecyclerview.R;
-import com.qdcares.qdcrecyclerview.listener.OnErrorListener;
+import com.widget.qdcrecyclerview.listener.OnErrorListener;
 
 /**
  * Author:handa on 2019/7/16
